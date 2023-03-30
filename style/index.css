@@ -1,0 +1,635 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  display: block;
+  padding: 18px 15px;
+  margin: 0 0 24px 0;
+  border: 0;
+  outline: none;
+  vertical-align: middle;
+  min-width: 225px;
+  max-width: 100%;
+  font-size: 15px;
+  line-height: 24px;
+  color: #647373;
+  background: #d3d9d9;
+}
+button,
+input[type="submit"] {
+  font: 16px/30px "opensans-bold", sans-serif;
+  background: #11abb0;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background: #3d4145;
+  color: #fff;
+}
+textarea {
+  min-height: 220px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  color: #b3b7bc;
+  background-color: #3d4145;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+}
+header:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+header .inicio-banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+header .banner-texto {
+  width: 100%;
+}
+header .banner-texto h1 {
+  font: 90px/1.1em "Roboto", sans-serif;
+  color: #fff;
+  letter-spacing: -2px;
+  margin: 0 auto 18px auto;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+header .banner-texto h3 {
+  font: 18px/1.9em "Roboto", serif;
+  color: #a8a8a8;
+  margin: 0 auto;
+  width: 70%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+header .banner-texto h3 span,
+header .banner-texto h3 a {
+  color: #fff;
+}
+header .banner-texto hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #2f2d2e;
+  border-color: rgba(150, 150, 150, 0.1);
+}
+header .redes-sociales {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 30px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+}
+header .redes-sociales li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+header .redes-sociales li a {
+  color: #fff;
+}
+header .redes-sociales li a:hover {
+  color: #f06000;
+}
+.opaque {
+  background-color: #333;
+}
+.perfil {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  width: 150px;
+  height: 150px;
+}
+
+.perfil img {
+  max-width: 100%;
+  height: auto;
+}
+#nav-inicio {
+  font: 12px "Roboto", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+ul#nav-ul {
+  min-height: 48px;
+  width: auto;
+  text-align: center;
+}
+ul#nav-ul li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+ul#nav-ul li a {
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+ul#nav-ul li a:active {
+  background-color: transparent !important;
+}
+ul#nav-ul li.current a {
+  color: #f06000;
+}
+#sobreMi {
+  background: #2b2b2b;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+}
+
+#sobreMi h2 {
+  font: 22px/30px "Roboto", sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+#sobreMi p {
+  line-height: 30px;
+  color: #7a7a7a;
+}
+#sobreMi .profile-pic {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+#sobreMi .contact-details {
+  width: 41.66667%;
+}
+#sobreMi .download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+#sobreMi .main-col {
+  padding-right: 5%;
+}
+#sobreMi .download .button {
+  margin-top: 6px;
+  background: #444;
+}
+#sobreMi .download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+#sobreMi .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  #sobreMi .contact-details,
+  #sobreMi .download {
+    width: 100%;
+    padding-top: 0;
+  }
+  #sobreMi .contact-details {
+    margin-bottom: 30px;
+  }
+}
+
+#sobreMi .content-sobreMi {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.content-sobreMi .three {
+  width: 25%;
+}
+.column,
+.columns {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
+}
+#sobreMi .main-col {
+  padding-right: 5%;
+}
+
+.content-sobreMi .nine {
+  width: 75%;
+}
+.content-sobreMi .content-sobreMi {
+  width: auto;
+  max-width: none;
+  margin: 0 -20px;
+}
+#educacion {
+  background: #2b2b2b;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+#educacion h1 {
+  font: 25px/36px "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+#educacion h1 span {
+  border-bottom: 3px solid #f06000;
+  padding-bottom: 6px;
+  color: #fff;
+}
+#educacion h3 {
+  font: 25px/30px "Roboto", sans-serif;
+  color: #fff;
+}
+
+#educacion .header-col {
+  padding-top: 9px;
+}
+#educacion .main-col {
+  padding-right: 10%;
+}
+
+#educacion .info {
+  font: 16px/24px "Roboto", serif;
+  color: #6e7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+#educacion .resume-info {
+  color: #7a7a7a;
+}
+#educacion .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#educacion .date {
+  font: 15px/24px "opensans-regular", sans-serif;
+  margin-top: 6px;
+}
+#experiencia {
+  background: #2b2b2b;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+.work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+}
+#experiencia h1 {
+  font: 25px/36px "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+#experiencia h1 span {
+  border-bottom: 3px solid #f06000;
+  padding-bottom: 6px;
+  color: #fff;
+}
+#experiencia h3 {
+  font: 25px/30px "Roboto", sans-serif;
+  color: #fff;
+}
+#experiencia .header-col {
+  padding-top: 9px;
+}
+#experiencia .main-col {
+  padding-right: 10%;
+}
+#experiencia .info {
+  font: 16px/24px "Roboto", serif;
+  color: #6e7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+#experiencia .resume-info {
+  color: #7a7a7a;
+}
+#experiencia .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#experiencia .date {
+  font: 15px/24px "opensans-regular", sans-serif;
+  margin-top: 6px;
+}
+#trabajos {
+  background: #ebeeee;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+#trabajos h1 {
+  font: 15px/24px "opensans-semibold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #95a3a3;
+}
+#trabajos-wrapper .columns {
+  margin-bottom: 36px;
+}
+@media only screen and (max-width: 900px) {
+  .s-bgrid-quarters [class*="column"] {
+    width: 25%;
+  }
+}
+.bgrid-quarters [class*="column"] {
+  width: 25%;
+}
+.row .twelve {
+  width: 100%;
+}
+.row.collapsed > .column,
+.row.collapsed > .columns,
+.column.collapsed,
+.columns.collapsed {
+  padding: 0;
+}
+
+.row .ten {
+  width: 83.33333%;
+}
+.row {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.row .two {
+  width: 16.66667%;
+}
+.row .eight {
+  width: 66.66667%;
+}
+.row {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.row .row {
+  width: auto;
+  max-width: none;
+  margin: 0 -20px;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.column,
+.columns {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
+}
+.column.centered,
+.columns.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+#contacto {
+  background: #191919;
+  padding-top: 96px;
+  padding-bottom: 102px;
+  color: #636363;
+  width: 100%;
+  height: 100%;
+}
+#contacto .section-head {
+  margin-bottom: 42px;
+}
+
+#contacto a,
+#contacto a:visited {
+  color: #11abb0;
+}
+#contacto a:hover,
+#contacto a:focus {
+  color: #fff;
+}
+
+#contacto h1 {
+  font: 18px/24px "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ebeeee;
+  margin-bottom: 6px;
+}
+#contacto h1 span {
+  display: none;
+}
+#contacto i {
+  padding-right: 10px;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: left;
+  float: left;
+  color: #ebeeee;
+}
+
+#contacto h4 {
+  font: 16px/24px "Roboto", sans-serif;
+  color: #ebeeee;
+  margin-bottom: 6px;
+}
+#contacto p.lead {
+  font: 18px/36px "Roboto", sans-serif;
+  padding-right: 3%;
+}
+#contacto .header-col {
+  padding-top: 6px;
+}
+
+#contacto form {
+  margin-bottom: 30px;
+}
+#contacto label {
+  font: 15px/24px "Roboto", sans-serif;
+  margin: 12px 0;
+  color: #ebeeee;
+  display: inline-block;
+  float: left;
+  width: 26%;
+}
+#contacto input,
+#contacto textarea,
+#contacto select {
+  padding: 18px 20px;
+  color: #eee;
+  background: #373233;
+  margin-bottom: 42px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  width: 65%;
+}
+#contacto input:focus,
+#contacto textarea:focus,
+#contacto select:focus {
+  color: #fff;
+  background-color: #11abb0;
+}
+#contacto button.submit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  background: #0d0d0d;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 26%;
+}
+#contacto button.submit:hover {
+  color: #0d0d0d;
+  background: #fff;
+}
+#contacto span.required {
+  color: #11abb0;
+  font-size: 13px;
+}
